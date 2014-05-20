@@ -1,0 +1,99 @@
+.header{
+	height: 50px;
+	.header-inner{
+		overflow: hidden;
+		position: relative;
+		height: 45px;
+		text-align: center;
+		.header-search{
+			margin-top: 15px;
+			margin-left: 1%;
+			margin-right: 6%;
+			.verticle-middle;
+			input{
+			    border: medium none;
+			    border-radius: 4px;
+			    font-size: 16px;
+			    padding: 4px 0 4px 10px;
+			    width: 200px;	
+			    font-family: "InterstateCondensed";		}
+		}
+		.header-login{
+		    margin-right: .5%;
+		    margin-top: 12px;
+			.verticle-middle;
+			p{
+				color: white;
+				font-size: 8px;
+				text-align: right;
+			}
+			.login-info{
+				padding: 4px;
+				cursor: pointer;
+				.code{
+					border: medium none;
+				    border-radius: 4px;
+				    font-size: 16px;
+				    width: 110px;
+				    background-color: @btn-color;
+				    color: @white;
+				    &:hover{
+				    	background-color: @btn-hovercolor;
+				    }
+				}
+				.user-info{
+					overflow: hidden;
+					a{
+						float: left;
+						color: black;
+						font-size: 16px;
+						margin: 0 5px 5px;
+						text-transform: capitalize;
+						display: block;
+						min-width: 50px;
+					}
+					img{
+						float: right;
+						margin-left: 5px;
+						padding-top: 7px;
+					}
+				}
+				.logout{
+					display: none;
+					background-color: @white;
+				    border: 1px solid @black;
+				    margin-left: -5px;
+				    position: absolute;
+				    text-align: center;
+				    top: 34px;
+				    width: 145px;
+				    z-index: 999;
+				    &:hover{
+				    	background-color: @btn-hovercolor;
+				    	a{
+				    		color: @white;
+				    	}
+				    }
+					a{
+						color: @black;
+					    display: block;
+					    font-size: 16px;
+					    margin: 0;
+					    padding: 3px;
+					    text-align: left;
+					    width: 139px;
+					}
+				}
+			}
+
+		}
+		.mypage{
+			position: absolute;
+			bottom: 0px;
+			right: 10px;
+			a{
+				display: block;
+			}
+		}
+	}
+}

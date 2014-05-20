@@ -1,0 +1,44 @@
+@import 'fonts.less';
+@import 'variables.less';
+@import 'base.less';
+/*@import 'mediaelementplayer.less';*/
+@import 'mixins.less';
+/*@import 'popup.less';*/
+@import 'buttons.less';
+
+
+body{
+	padding: 5px;
+	color: @text-color;
+	font-family: "InterstateCondensed";
+}
+.wrapper{
+	margin: 0px auto;
+	position: relative;
+	width: 1024px;
+}
+.hide{
+	display: none !important;
+}
+ul{
+	padding: 0px;
+	margin: 0px;
+	li{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px
+	}
+}
+.verticle-middle{
+	display: inline-block;
+	vertical-align: middle;
+}
+.verticle-top{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+@import 'header.less';
+/*not getting updated*/
+@import 'media-queries.less';
