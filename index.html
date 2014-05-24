@@ -17,29 +17,47 @@
   </head>
   <body>
     <header>
-      <div class="wrapper">
-         <div>
-           <img src="" alt="logo">
-         </div>
-         <div>
-           <a href="javascript:void(0)">facebook logo</a>
-           <a href="javascript:void(0)">twitter logo</a>
-           <div><a href="javascript:void(0)">+91-9988002233</a></div>
-         </div>
-         <div>
-            <a href="javascript:void(0)">Account</a>
-            <a href="javascript:void(0)">Cart</a>
-            <a href="javascript:void(0)">Store Locator</a>
-         </div>
-         <div>
-           <input type="text" placeholder="Username">
-           <input type="text" placeholder="Password">
-         </div>
-      </div>
+      <section class="header-first-section">
+        <div class="wrapper">
+           <ul class="pull-left">
+             <li><a href="javascript:void(0);">Account</a></li>
+             <li><a href="javascript:void(0);">Cart</a></li>
+             <li><a href="javascript:void(0);">Store Locator</a></li>
+             <li><a href="javascript:void(0);"><span class="icon phone"></span>+91-8976767676</a></li>
+           </ul>
+           <div class="pull-right">
+             <div class="sign-in-sec">
+               <label for="signin"  class="header-section-font">Sign In</label>
+               <input type="text" placeholder="Username">
+               <input type="text" placeholder="Password">
+               <a href="javascript:void(0)" class="btn header-section-font go">Go</a>
+             </div>
+             <a href="javascript:void(0)" class="header-section-font signup">Sign Up</a>
+           </div>
+        </div>
+      </section>
+      <section class="header-second-section clearfix">
+        <div class="wrapper">
+          <div class="brandsection">
+            <img src="img/brand.png" alt="brandlogo" class="pull-left">
+            <div class="globe">
+              <!-- <img src="img/globe.png" alt="globe" class="globe"> -->
+              <span class="languagechange">
+                <a href="javascript:void(0);" >English</a>
+              </span>
+              
+              <!-- <ul>
+                <li>English</li>
+                <li>German</li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <section class="navigator">
-      <div class="wrapper">
-        <ul>
+      <div class="wrapper nav-backgruond">
+        <ul class="main-nav-bar">
           <li><a href="javascript:void(0)">Wood Work</a></li>
           <li><a href="javascript:void(0)">Furniture</a></li>
           <li><a href="javascript:void(0)">Bathroom accessories</a></li>
@@ -74,43 +92,62 @@
           <li><a href="javascript:void(0)">Curtain solutions</a></li>
           <li><a href="javascript:void(0)">Other products</a></li>
         </ul>
+        <input type="text" placeholder="Search">
       </div>
     </section>
     <section class="slidersection">
-      <div class="btn-group">
-        <a href="javascript:void(0)" class="btn">Affordable</a>
-        <a href="javascript:void(0)" class="btn">Intuitive</a>
-        <a href="javascript:void(0)" class="btn">24 x 7 support</a>
-        <a href="javascript:void(0)" class="btn">All brands</a>
-      </div>
-      <div class="slider">
-        slider
+      <div class="wrapper slider-background">
+        <div class="btn-group">
+          <a href="javascript:void(0)" class="btn side-btn-roup">All brands</a>
+          <a href="javascript:void(0)" class="btn side-btn-roup">Affordable</a>
+          <a href="javascript:void(0)" class="btn side-btn-roup">Intuitive</a>
+          <a href="javascript:void(0)" class="btn side-btn-roup">24 x 7 support</a>
+        </div>
+        <div class="slider">
+          slider
+        </div>
       </div>
     </section>
     <section>
-      <div class="wrapper">
-        <div class="grid">
+      <div class="wrapper grid-background">
+        <div class="grid main-grid">
           <h3>Do my Home</h3>
-          <p>
-            
-          </p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen. book.</p>
         </div>
         <div class="grid">
           <h3>Awards</h3>
-          <div>
-            
+          <div class="grid-image-holder">
+            <div class="grid-images">
+              <img src="img/award_1.png">
+              <div>Best Designer</div>
+            </div>
+            <div class="grid-images">
+              <img src="img/award_2.png">
+              <div>Best Designer</div>
+            </div>
+            <div class="grid-images">
+              <img src="img/award_1.png">
+              <div>Best Designer</div>
+            </div>
+            <div class="grid-images">
+              <img src="img/award_2.png">
+              <div>Best Designer</div>
+            </div>
           </div>
         </div>
         <div class="grid">
           <h3>Your 3D space</h3>
-          <div>
-            
+          <div class="grid-image-holder">
+            <img src="img/3d.png" class="big-img">
+            <p></p>
           </div>
         </div>
         <div class="grid">
           <h3>Catalogue</h3>
-          <div>
-            
+          <div class="grid-image-holder">
+            <div class="grid-imags">
+              <p></p>
+            </div>
           </div>
         </div>
       </div>
