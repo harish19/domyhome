@@ -146,18 +146,107 @@
           <h3>Catalogue</h3>
           <div class="grid-image-holder">
             <img src="img/catalogue.png" class="big-img">
-            <a href="javascript:void(0)" class="links">View Online ></a>
+            <a href="javascript:void(0)" class="links first-link">View Online ></a>
             <a href="javascript:void(0)" class="links">Download ></a>
           </div>        
         </div>
       </div>
+      <div class="clearfix">
+        <div class="wrapper">
+          <div class="mini-slider-container pull-left">
+            <div class="slider-header">
+              <h3>TOP MOVING  PRODUCTS</h3>
+              <small>By Value</small>
+            </div>
+            <div class="sliderinner-container">
+              <div class="slide">
+               <img src="img/slider-1.png">
+               <div class="slide-content">
+                 <span>Denim Women's Hidden </span>
+                 <div>
+                   <span class="amount">$179.00</span>
+                   <span class="seperator">|</span>
+                   <a href="javascript:void(0)">Buy Now</a>
+                 </div>
+               </div>
+              </div>
+              <div class="slide">
+                <img src="img/slider-2.png">
+                <div class="slide-content">
+                 <span>Denim Women's Hidden </span>
+                 <div>
+                   <span class="amount">$179.00</span>
+                   <span class="seperator">|</span>
+                   <a href="javascript:void(0)">Buy Now</a>
+                 </div>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="mini-slider-container pull-left">
+            <div class="slider-header">
+              <h3>TOP MOVING  PRODUCTS</h3>
+              <small>By Value</small>
+            </div>
+            <div class="sliderinner-container">
+              <div class="slide">
+               <img src="img/slider-1.png">
+               <div class="slide-content">
+                 <span>Denim Women's Hidden </span>
+                 <div>
+                   <span class="amount">$179.00</span>
+                   <span class="seperator">|</span>
+                   <a href="javascript:void(0)">Buy Now</a>
+                 </div>
+               </div>
+              </div>
+              <div class="slide">
+                <img src="img/slider-2.png">
+                <div class="slide-content">
+                 <span>Denim Women's Hidden </span>
+                 <div>
+                   <span class="amount">$179.00</span>
+                   <span class="seperator">|</span>
+                   <a href="javascript:void(0)">Buy Now</a>
+                 </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
      <footer>
-       
+       <div class="header-first-section footer">
+         <div class="wrapper">
+          <div class="clearfix pull-left">
+             <ul class="clearfix">
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">Our Partners</a></li>
+               <li><a href="#">Terms and Conditions</a></li>
+             </ul>
+             <div class="pullleft copyright">Copyright © 2014. All Rights Reserved.</div>
+          </div>
+          <div class="pull-right">
+            <img src="img/footerlogo.png">
+          </div>
+         </div>
+       </div>
      </footer>
 
       <script src="js/jquery.1.10.2.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script type="text/javascript" src="js/bxslider.js"></script>
+      <script type="text/javascript">
+        $('.sliderinner-container').bxSlider({
+            slideWidth: 300,
+            minSlides: 3,
+            maxSlides: 4,
+            moveSlides: 1,
+            slideMargin: 5
+         });
+      </script>
       
   </body>
 </html>
