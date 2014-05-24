@@ -414,7 +414,7 @@ ul li {
 }
 .grid-background .description {
   padding: 35px 10px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 23px;
 }
 .grid-background .links {
@@ -533,7 +533,7 @@ ul li {
    ========================================================================== */
 @media (max-width: 1170px) {
   .wrapper {
-    width: 100%;
+    width: 96%;
   }
 }
 @media (max-width: 1024px) {
