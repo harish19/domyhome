@@ -387,11 +387,11 @@ ul li {
   margin-bottom: 20px;
 }
 .grid-background .main-grid {
-  width: 286px;
-  background-color: #e9e9e9;
-  padding: 28px 0px 28px 14px;
+  background-color: #E9E9E9;
   font-size: 14px;
   line-height: 30px;
+  padding: 38px 0 38px 14px;
+  width: 286px;
 }
 .grid-background .main-grid h3 {
   text-align: center;
@@ -422,6 +422,9 @@ ul li {
   padding: 11px 7px;
   font-size: 14px;
   line-height: 36px;
+}
+.grid-background .award {
+  padding: 5px 0px;
 }
 .header {
   height: 50px;
