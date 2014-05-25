@@ -19,12 +19,14 @@
     <header>
       <section class="header-first-section">
         <div class="wrapper">
-           <ul class="pull-left">
-             <li><a href="javascript:void(0);">Account</a></li>
-             <li><a href="javascript:void(0);">Cart</a></li>
-             <li><a href="javascript:void(0);">Store Locator</a></li>
-             <li><a href="javascript:void(0);"><span class="icon phone"></span>+91-8976767676</a></li>
-           </ul>
+          <div class="pull-left">
+             <ul>
+               <li><a href="javascript:void(0);">Account</a></li>
+               <li><a href="javascript:void(0);">Cart</a></li>
+               <li><a href="javascript:void(0);">Store Locator</a></li>
+               <li><a href="javascript:void(0);"><span class="icon phone"></span>+91-8976767676</a></li>
+             </ul>
+           </div>
            <div class="pull-right">
              <div class="sign-in-sec">
                <label for="signin"  class="header-section-font">Sign In</label>
@@ -57,6 +59,7 @@
     </header>
     <section class="navigator">
       <div class="wrapper nav-backgruond">
+        <div id="lines" class="nav-btn"></div>
         <ul class="main-nav-bar">
           <li><a href="javascript:void(0)">Wood Work</a></li>
           <li><a href="javascript:void(0)">Furniture</a></li>
@@ -103,8 +106,49 @@
           <a href="javascript:void(0)" class="btn side-btn-roup">Intuitive</a>
           <a href="javascript:void(0)" class="btn side-btn-roup">24 x 7 support</a>
         </div>
-        <div class="slider">
-          slider
+        <div class="main-slider">
+          <div id ="mainslider">
+            <div class="slide">
+              <span class="offer-image">
+                <img src="img/mainslider-1.png">
+              </span>
+              <span class="season-offer-name">
+                <span>Collection</span>
+                <span>Summer</span>
+                <span>Helping you look cool</span>
+              </span>
+              <span class="offer-per">
+                <span class="postion">
+                  <span>40</span>
+                  <span>off</span>
+                  <span>%</span>
+                </span>
+              </span>
+              <div class="regards-prod">
+                Some text regarding the featured product.
+              </div>
+           </div>
+            <div class="slide">
+              <span class="offer-image">
+                <img src="img/mainslider-1.png">
+              </span>
+              <span class="season-offer-name">
+                <span>Collection</span>
+                <span>Summer</span>
+                <span>Helping you look cool</span>
+              </span>
+              <span class="offer-per">
+                <span class="postion">
+                  <span>50</span>
+                  <span>off</span>
+                  <span>%</span>
+                </span>
+              </span>
+              <div class="regards-prod">
+                Some text regarding the featured product.
+              </div>
+           </div>          
+         </div> 
         </div>
       </div>
     </section>
@@ -245,6 +289,11 @@
             maxSlides: 4,
             moveSlides: 1,
             slideMargin: 5
+         });
+
+        $('#mainslider').bxSlider({
+            moveSlides: 1,
+            adaptiveHeight: true
          });
       </script>
       

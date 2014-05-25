@@ -74,7 +74,7 @@ ul{
 	}
 	ul{
 		li{
-			float: left;
+			display:inline-block;
 			padding: 7px 30px 7px 0px;
 			a{
 				.header-section-font();		
@@ -149,6 +149,7 @@ ul{
 		// padding: 16px 10px; 
 	}
 	.main-nav-bar{
+		display: block;
 		float: left;
 		li{
 			// display: inline-block;
@@ -165,8 +166,8 @@ ul{
 	}
 	input{
 		float: right;
-		margin: 10px 16px 10px;
 		.roundedinput();
+		margin: 10px 16px 10px;
 		background-color: @white;
 		border-color: @white;
 		background-image: url("../img/search.png");
@@ -234,7 +235,9 @@ ul{
 	}
 	.grid-images{
 		display: inline-block;
-		margin: 9% 4%;
+		margin: 9% 0%;
+		text-align: center;
+		width: 49%;
 	}
 	.grid:last-child{
 		margin-right: 0px;
@@ -284,6 +287,11 @@ ul{
 	.bx-pager{
 		display: none;
 	}
+	.bx-viewport{
+		height: 100%;
+		min-height: 200px;
+	}
+
 }
 
 .slider-header{
@@ -316,10 +324,7 @@ ul{
 .sliderinner-container{
 	padding: 35px 10px 0px;
 }
-.bx-viewport{
-	height: 100%;
-	min-height: 200px;
-}
+
 .slide{
 	text-align: center;
 }
@@ -369,13 +374,133 @@ ul{
   text-indent: -9999px;
   z-index: 200;
 }
-
+.offer-image{
+	img{
+		margin-top: 6%;
+		margin-left: 35%;
+	}
+}
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
 }
 
 .bx-wrapper{
 	position: relative;
+}
+
+.main-slider{
+	position: relative;
+	display: inline-block;
+	width: 700px;
+	height: 278px;
+	background-color: #6294de;
+	margin-top: 10px;
+	.bx-pager-item{
+		display: none;
+	}
+	.bx-viewport{
+		height: 100%;
+		min-height: 290px;
+	}
+}
+
+.main-slider .slide{
+	background-color: #6294de;
+}
+
+.regards-prod{
+	background-color: #f44845;
+	width: 70%;
+	line-height: 28px;
+	font-size: 14px;
+	text-align: left;
+	padding-left: 2%;
+	color: #fff;
+	font-family:'HelveticaLTStd-Bold';
+}
+
+.season-offer-name{
+	font-family: 'Georgia';
+	width: 26%;
+	position: absolute;
+	left: 10%;
+	top: 24%;	
+	span:nth-child(2){
+		font-size: 48px;
+		line-height: 26px;
+		color:@white;
+	}
+	span:nth-child(3){
+		font-family:'HelveticaLTStd-Bold';
+		font-size: 14px;
+		text-align: left;
+	}
+	span{
+		width: 100%;
+		display: inline-block;
+		text-align: right;
+		font-size: 20px;
+		line-height: 20px;
+	}
+}
+
+.offer-per{
+	background-color: #2d2d2d;
+	width: 85px;
+	height: 85px;
+	border-radius: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'Georgia';
+	font-size: 48px;
+	color: #ffffff;
+	position: absolute;
+	top: 45%;
+	left: 32%;	
+	line-height: 8px;
+	.postion{
+		position: relative;
+		span:nth-child(2){
+			bottom: 0;
+		    color: #BC3726;
+		    font-size: small;
+		    left: 28px;
+		    position: absolute;
+		    top: 53px;		
+		}
+		span:nth-child(3){
+			bottom: 0;
+		    color: #FFFFFF;
+		    font-size: 13px;
+		    left: 52px;
+		    position: absolute;		
+		}
+		span:nth-child(1){
+			display: inline-block;
+			line-height: 63px;		
+		}
+	}
+}
+.nav-btn { 
+    position: relative;         
+    margin-top:2%; 
+    // border: 2px solid darken(@navbackgroundcolor,40%);
+    // background-color:darken(@navbackgroundcolor,20%);
+    border-radius: 2px; 
+    height: 36px; 
+    width:36px;  
+    cursor: pointer;
+}
+#lines { 
+    border-bottom: 17px double darken(@navbackgroundcolor,60%);
+    border-top: 6px solid darken(@navbackgroundcolor,60%);    
+    content:"";
+    height: 5px; 
+    position: absolute; 
+    left:5px;  
+    top: 4px; 
+    width:30px; 
+    display: inline-block;
 }
 
 @import 'header.less';

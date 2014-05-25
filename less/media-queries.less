@@ -6,7 +6,25 @@
   .wrapper {
     width: 96%;
   }
-   
+   .slider-background {
+   	.btn-group{
+		width: 28%;
+		margin-right: 2.6%;
+   	}
+   	.main-slider{
+   		width:69%
+   	}
+   }
+   .grid-background {
+   	.grid.main-grid{
+		width: 27%;
+		margin-right: 2.6%;
+   	}
+   	.grid{
+   		width: 20%;
+		margin-right: 2.5%;
+   	}
+   }
 }
 // ========================================
 //    Desktop - 1024px+
@@ -21,7 +39,39 @@
 // ========================================
 
 @media  (max-width: 980px){
-    
+    .navigator .main-nav-bar {
+    	li {
+    		a{
+    			font-size: 12px;
+    			padding: 13px 9px;
+    		}
+    	}
+    }
+}
+
+@media (max-width: 900px){
+	.header-first-section{
+		.pull-right,.pull-left{
+			float: none;
+			clear: both;
+			width: 100%;
+			text-align:center;
+		}
+	}
+	 .navigator .main-nav-bar {
+    	li {
+    		a{
+    			padding: 10px 7px;
+    		}
+    	}
+    }
+
+	.nav-backgruond {
+		input{
+			margin: 10px 1px;
+			width: 85px;
+		}
+	}
 }
 
 @media (max-width:800px)  {
@@ -31,7 +81,36 @@
 //    portray Tablet - Between 768px 
 // ========================================
 @media (max-width:768px)  {
-  
+  .slider-background{
+	  .btn-group,.main-slider{
+	  	display: block;
+	  	width: 100%;
+	  	.side-btn-roup{
+	  		width: 47%;
+			display: inline-block;
+			margin: 1.3%;
+	  	}
+	  }
+  }
+  .mini-slider-container{
+  	float: none;
+  	width: 100%;
+  }
+  .mini-slider-container:first-child,.mini-slider-container:nth-child(2){
+  	margin: 10px 0px 10px;
+  }
+	.grid-background .main-grid {
+		background-color: #E9E9E9;
+		font-size: 14px;
+		line-height: 30px;
+		padding: 1% 0 38px 14px;
+	}
+	.grid-background .grid.main-grid,.grid-background .grid{
+		width: 45%;
+	}
+	.navigator .main-nav-bar{
+		display: none;
+	}
 }
 
 // ========================================
@@ -46,7 +125,36 @@
 // ========================================
 
 @media (max-width:480px) {
-  
+  .grid-background .grid.main-grid,.grid-background .grid{
+		width: 95%;
+		margin: 0px;
+	}
+	
+}
+
+@media (max-width:360px) {
+	.header-first-section{
+	  .sign-in-sec{
+	  	label,input,a{
+	  		display: block;
+	  		margin:10px auto;
+	  	}
+	  	border-right: none;
+	  }
+	  a{
+	  	display: block;
+	  }
+	}
+	.slider-background .btn-group .side-btn-roup, .slider-background .main-slider .side-btn-roup{
+		width: 46%;
+	}
+	.slider-background .btn-group .side-btn-roup{
+		font-size: 18px;
+		padding: 8px 0;
+	}
+	.regards-prod{
+		width: 100%;
+	}
 }
 
 
@@ -54,7 +162,3 @@
   
 }
 
-
-@media (max-height:480px) {
-  
-}
