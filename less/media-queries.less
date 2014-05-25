@@ -81,6 +81,9 @@
 //    portray Tablet - Between 768px 
 // ========================================
 @media (max-width:768px)  {
+	.nav-btn,#lines{
+		display: inline-block;
+	}
   .slider-background{
 	  .btn-group,.main-slider{
 	  	display: block;
@@ -110,6 +113,41 @@
 	}
 	.navigator .main-nav-bar{
 		display: none;
+		float: none;
+	    height: 242px;
+	   	overflow: auto;
+    	li{
+			float: none;
+			padding: 5px 10px;
+			a{
+				line-height: 20px;
+				&:hover{
+					background-color: #D5D9E1;
+				}
+			}
+			&:hover{
+				background-color: #D5D9E1;
+				a{
+					background-color: #D5D9E1;
+				}
+			}
+			.sub-menu{
+				background-color: #D5D9E1;
+				position: inherit;
+				display: block;
+				ul{
+					float: none;
+					li a{
+						line-height: 14px;
+					}
+				}
+			}
+		}
+	}
+	.nav-backgruond input{
+		position: absolute;
+		top: 2px;
+		right: 2px;
 	}
 }
 
@@ -129,10 +167,6 @@
 		width: 95%;
 		margin: 0px;
 	}
-	
-}
-
-@media (max-width:360px) {
 	.header-first-section{
 	  .sign-in-sec{
 	  	label,input,a{
@@ -145,6 +179,10 @@
 	  	display: block;
 	  }
 	}
+	
+}
+
+@media (max-width:360px) {
 	.slider-background .btn-group .side-btn-roup, .slider-background .main-slider .side-btn-roup{
 		width: 46%;
 	}

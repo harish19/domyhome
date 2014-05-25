@@ -66,7 +66,7 @@
           <li><a href="javascript:void(0)">Bathroom accessories</a></li>
           <li>
             <a href="javascript:void(0)">Electrical solutions</a>
-            <div class="sub-menu hide">
+            <div class="sub-menu">
               <ul>
                 <li><h3>Basic Electricals</h3></li>
                 <li><a href="">Fan</a></li>
@@ -295,6 +295,9 @@
             moveSlides: 1,
             adaptiveHeight: true
          });
+        $('.nav-btn').click(function(){
+          $('.main-nav-bar').slideToggle();
+        })
       </script>
       
   </body>

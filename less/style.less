@@ -12,7 +12,7 @@
 	width: 1024px;
 }
 .hide{
-	display: none !important;
+	display: none;
 }
 .pull-left{
 	float: left;
@@ -152,7 +152,6 @@ ul{
 		display: block;
 		float: left;
 		li{
-			// display: inline-block;
 			float: left;
 			border-right: 1px solid darken(@navbackgroundcolor,10%);
 			a{
@@ -161,6 +160,38 @@ ul{
 			    padding: 14px 10px;
 			    vertical-align: middle;
     			color:@navtextcolor;
+    			&:hover{
+    				background-color: @white;
+    			}
+  			}
+  			&:hover{
+  				a{
+  					background-color: @white;
+  				}
+				.sub-menu{
+					display: block;
+				}
+			}
+			.sub-menu{
+				position: absolute;
+				display: none;
+				z-index: 9999999;
+				background-color:@white;
+				width: 100%;
+				left: 0px;
+				top: 47px;
+				ul{
+					float: left;
+					margin: 0px 20px;
+				}
+				li{
+					float: none;
+					border:none;
+					a{
+						line-height: 34px;
+						padding: 5px 10px;
+					}
+				}
 			}
 		}
 	}
@@ -483,24 +514,25 @@ ul{
 }
 .nav-btn { 
     position: relative;         
-    margin-top:2%; 
+    margin-top:6px; 
     // border: 2px solid darken(@navbackgroundcolor,40%);
     // background-color:darken(@navbackgroundcolor,20%);
     border-radius: 2px; 
     height: 36px; 
     width:36px;  
     cursor: pointer;
+    display: none;
 }
 #lines { 
     border-bottom: 17px double darken(@navbackgroundcolor,60%);
     border-top: 6px solid darken(@navbackgroundcolor,60%);    
     content:"";
     height: 5px; 
-    position: absolute; 
+    // position: absolute; 
     left:5px;  
     top: 4px; 
     width:30px; 
-    display: inline-block;
+    display: none;
 }
 
 @import 'header.less';
