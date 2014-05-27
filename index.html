@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -279,9 +280,27 @@
        </div>
      </footer>
 
+    <div data-remodal-id="modal2">
+      <div class="main-container">
+        <h2>Great Designs Direct</h2>
+        <h2>From the Makers</h2>
+        <div class="popup-grids popup-right-grids">
+          <img src="img/chair.png">
+        </div>
+
+        <div class="popup-grids">
+          <p>Create your account to stay informed of the
+          latest news and promotions, and get a $2 
+          voucher for your first order.</p>
+          <a class="remodal-cancel" href="#">Register</a>
+        </div>
+      </div>
+    </div>
+
       <script src="js/jquery.1.10.2.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script type="text/javascript" src="js/bxslider.js"></script>
+      <script type="text/javascript" src="js/remodal.min.js"></script>
       <script type="text/javascript">
         $('.sliderinner-container').bxSlider({
             slideWidth: 300,
@@ -298,6 +317,9 @@
         $('.nav-btn').click(function(){
           $('.main-nav-bar').slideToggle();
         })
+       var inst = $('[data-remodal-id=modal2]').remodal();
+       inst.open();
+
       </script>
       
   </body>
